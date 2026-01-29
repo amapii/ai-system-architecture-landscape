@@ -29,22 +29,22 @@ A comprehensive reference for modern AI system components, from data ingestion t
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────┐
-│                              END-USER APPLICATIONS                                   │
+│                              END-USER APPLICATIONS                                  │
 │                    Chat UIs │ Web Apps │ APIs │ Developer Tools                     │
 ├─────────────────────────────────────────────────────────────────────────────────────┤
-│                              API GATEWAY / BACKEND                                   │
+│                              API GATEWAY / BACKEND                                  │
 ├───────────────────────────────┬─────────────────────────────────────────────────────┤
-│     ORCHESTRATION LAYER       │           EVALUATION & SAFETY                        │
+│     ORCHESTRATION LAYER       │           EVALUATION & SAFETY                       │
 │  Agents │ Workflows │ RAG     │     Guardrails │ Logging │ Observability            │
 ├───────────────────────────────┴─────────────────────────────────────────────────────┤
-│                              AI INFERENCE LAYER                                      │
+│                              AI INFERENCE LAYER                                     │
 │              LLM Serving │ Embedding Services │ Model APIs                          │
 ├─────────────────────────────────────────────────────────────────────────────────────┤
-│                              DATA LAYER                                              │
+│                              DATA LAYER                                             │
 │        Vector DBs │ Structured DBs │ Object Storage │ Document Stores               │
 ├─────────────────────────────────────────────────────────────────────────────────────┤
-│                              INFRASTRUCTURE                                          │
-│                 Containers │ Orchestration │ Cloud Platforms                         │
+│                              INFRASTRUCTURE                                         │
+│                 Containers │ Orchestration │ Cloud Platforms                        │
 └─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -622,6 +622,48 @@ Enables scalable, reliable, and cost-effective operation of AI workloads across 
 | Observability | All layers | Operations |
 | Backend/API | RAG, LLM, Auth | User Applications |
 | UI/Chat | Backend APIs | End users |
+
+```mermaid
+flowchart LR
+
+    %% Core Infrastructure
+    Infrastructure --> Storage
+    Infrastructure --> Embedding
+    Infrastructure --> LLMServing
+
+    %% Ingestion & Storage
+    Storage --> Ingestion
+    Ingestion --> Embedding
+    Ingestion --> VectorDB
+
+    %% Embeddings & Vector Search
+    Embedding --> VectorDB
+    Embedding --> QueryProcessing
+    VectorDB --> RAG
+
+    %% LLM & Intelligence
+    LLMServing --> RAG
+    LLMServing --> Agents
+    LLMServing --> Guardrails
+
+    %% RAG / Agents / Workflows
+    RAG --> Backend
+    Agents --> Backend
+    Workflow --> ExternalSystems
+
+    %% Guardrails & Observability
+    Guardrails --> Observability
+    Observability --> Operations
+
+    %% Backend & UI
+    Backend --> UI
+    UI --> EndUsers
+
+    %% Cross-cutting
+    Storage --> Observability
+    VectorDB --> Observability
+    Backend --> Observability
+```
 
 ---
 
